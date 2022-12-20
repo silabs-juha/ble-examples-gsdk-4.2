@@ -1,8 +1,9 @@
-# SoC - Empty 2
+# Bluetooth - SoC Empty for Bootloader with Apploader
 
-The Bluetooth SoC-Empty 2 example is a project that you can use as a template for any standalone Bluetooth application.
+The Bluetooth - SoC Empty for Bootloader with Apploader example is a project that you can use as a template for any standalone Bluetooth application.
 
-> Note: this example expects a specific Gecko Bootloader to be present on your device. For details see the Troubleshooting section.
+> Note: This example requires a Gecko Bootloader with Apploader. Start address 0x00012000. For details see the Troubleshooting section.
+> The same application as the default Bluetooth - SoC Empty.
 
 ## Getting Started
 
@@ -24,7 +25,7 @@ These steps are covered in the following sections. To learn more about programmi
 
 ## Designing the GATT Database
 
-The SOC-empty example implements a basic GATT database. GATT definitions (services/characteristics) can be extended using the GATT Configurator, which can be found under Advanced Configurators in the Software Components tab of the Project Configurator. To open the Project Configurator, open the .slcp file of the project.
+The SOC Empty example implements a basic GATT database. GATT definitions (services/characteristics) can be extended using the GATT Configurator, which can be found under Advanced Configurators in the Software Components tab of the Project Configurator. To open the Project Configurator, open the .slcp file of the project.
 
 ![Opening GATT Configurator](image/readme_img1.png)
 
@@ -38,19 +39,19 @@ A Bluetooth application is event driven. The Bluetooth stack generates events e.
 
 Additional application logic has to be implemented in the `app_init()` and `app_process_action()` functions. Find the definitions of these functions in *app.c*. The `app_init()` function is called once when the device is booted, and `app_process_action()` is called repeatedly in a while(1) loop. For example, you can poll peripherals in this function. To save energy and to have this function called at specific intervals only, for example once every second, use the services of the [Sleeptimer](https://docs.silabs.com/gecko-platform/latest/service/api/group-sleeptimer). If you need a more sophisticated application, consider using RTOS (see [AN1260: Integrating v3.x Silicon Labs Bluetooth Applications with Real-Time Operating Systems](https://www.silabs.com/documents/public/application-notes/an1260-integrating-v3x-bluetooth-applications-with-rtos.pdf)).
 
-## Features Already Added to the SOC-Empty Application
+## Features Already Added to the SOC Empty Application
 
-The SOC-Empty application is ***almost*** empty. It implements a basic application to demonstrate how to handle events, how to use the GATT database, and how to add software components.
+The SOC Empty application is ***almost*** empty. It implements a basic application to demonstrate how to handle events, how to use the GATT database, and how to add software components.
 
 * A simple application is implemented in the event handler function that starts advertising on boot (and on connection_closed event). This makes it possible for remote devices to find the device and connect to it.
 * A simple GATT database is defined by adding Generic Access and Device Information services. This makes it possible for remote devices to read out some basic information such as the device name.
 * The OTA DFU software component is added, which extends both the event handlers (see *sl_ota_dfu.c*) and the GATT database (see *ota_dfu.xml*). This makes it possible to make Over-The-Air Device-Firmware-Upgrade without any additional application code.
 
-## Testing the SOC-Empty Application
+## Testing the SOC Empty Application
 
 As described above, an empty example does nothing except advertising and letting other devices connect and read its basic GATT database. To test this feature, do the following:
 
-1. Build and flash the SoC-Empty example to your device.
+1. Build and flash the SoC Empty example to your device.
 2. Make sure a bootloader is installed. See the Troubleshooting section.
 3. Download the **EFR Connect** smartphone app, available on [iOS](https://apps.apple.com/us/app/efr-connect/id1030932759) and [Android](https://play.google.com/store/apps/details?id=com.siliconlabs.bledemo).
 4. Open the app and choose the Bluetooth Browser.
