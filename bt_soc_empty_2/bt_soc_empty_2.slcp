@@ -1,12 +1,12 @@
-project_name: bt_soc_empty
+project_name: bt_soc_empty_2
 package: Bluetooth
-label: Bluetooth - SoC Empty
+label: Bluetooth - SoC Empty 2
 description: >
-  A minimal project structure, that serves as a starting point for custom
+  Test desc. SLCP A minimal project structure, that serves as a starting point for custom
   Bluetooth applications. The application starts advertising after boot and
   restarts advertising after a connection is closed.
 category: Bluetooth Examples
-quality: production
+quality: development
 
 filter:
   - name: "Wireless Technology"

@@ -1,6 +1,6 @@
-# SoC - Empty
+# SoC - Empty 2
 
-The Bluetooth SoC-Empty example is a project that you can use as a template for any standalone Bluetooth application.
+The Bluetooth SoC-Empty 2 example is a project that you can use as a template for any standalone Bluetooth application.
 
 > Note: this example expects a specific Gecko Bootloader to be present on your device. For details see the Troubleshooting section.
 

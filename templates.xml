@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <model:MDescriptors xmlns:model="http://www.silabs.com/ss/Studio.ecore">
-  <descriptors name="bt_soc_empty_2" label="Bluetooth - SoC Empty 2" description="TESTING! A minimal project structure, that serves as a starting point for custom Bluetooth applications. The application starts advertising after boot and restarts advertising after a connection is closed.&#xA;">
+  <descriptors name="bt_soc_empty_2" label="Bluetooth - SoC Empty 2" description="Test desc. XML. A minimal project structure, that serves as a starting point for custom Bluetooth applications. The application starts advertising after boot and restarts advertising after a connection is closed.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
     <properties key="projectFilePaths" value="example/bt_soc_empty_2/bt_soc_empty_2.slcp"/>
