@@ -15,7 +15,7 @@
     <properties key="stockConfigCompatibility" value="com.silabs.ss.framework.project.toolchain.core.default"/>
     <properties key="filters" value="Device\ Type|SoC Project\ Difficulty|Beginner Wireless\ Technology|Bluetooth"/>
   </descriptors>
-  <descriptors name="bt_soc_basic_nobtldr" label="Bluetooth - SoC Basic w/o Bootloader" description="Same application as the default Bluetooth - SoC Empty but has few additional components for serial UART, printf, log and VCOM enable. Without Bootloader (nor Apploader) support. Start address 0x00012000. A basic project structure, that serves as a starting point for custom Bluetooth applications. The application starts advertising after boot and restarts advertising after a connection is closed.&#xA;">
+  <descriptors name="bt_soc_basic_nobtldr" label="Bluetooth - SoC Basic w/o Bootloader" description="Same application as the default Bluetooth - SoC Empty but has few additional components for serial UART, printf, log and VCOM enable. Without Bootloader (nor Apploader) support. Start address 0x00000000. A basic project structure, that serves as a starting point for custom Bluetooth applications. The application starts advertising after boot and restarts advertising after a connection is closed.&#xA;">
     <properties key="namespace" value="template.uc"/>
     <properties key="keywords" value="universal\ configurator"/>
     <properties key="solutionReferenceId" value="app.bluetooth.bt_soc_basic_nobtldr.bt_soc_basic_nobtldr.slcp"/>
